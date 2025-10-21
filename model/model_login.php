@@ -1,4 +1,9 @@
 <?php
+// Producción: no mostrar errores al navegador
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING & ~E_DEPRECATED);
+ini_set('display_errors', '0');   // no mostrar
+ini_set('log_errors', '1');       // (opcional) seguir logeando a error_log
+
 include_once("../config/config.php");
 
 
